@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/**
+ * @doc 首页
+ * @author Heanes
+ * @time 2017-10-28 23:50:49 周六
+ */
+/*html.full-width-height,html.full-width-height body{
+  width:100%;
+  height:100%;
+}*/
+/**
+ * @doc 顶部全屏展示区域
+ */
+.show-full-bg-image{
+  position:absolute;
+  top:0;
+  bottom:0;
+  display:table;
+  width:100%;
+  height:100%;
+  background: no-repeat center center scroll;
+  background-image:url(../image/home/devices-workation.jpg);
+  background-size: cover;
+}
+
+.text-vertical-center{
+  display:table-cell;
+  text-align:center;
+  vertical-align:middle;
+}
+.show-full-bg-image .motto-show{
+  position:relative;
+  padding:20px 0;
+  line-height:40px;
+
+  .show-bg{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.35);
+    filter: blur(2px);
+  }
+
+  .show-content{
+    position:relative;
+  }
+
+  h1{
+    font-size:3.2em;
+  }
+  .show-text{
+    line-height:1.3;
+    color:#fff;
+    &.motto-author{
+      text-align:center;
+      margin-left:570px;
+    }
+  }
+  .dash{
+    display:inline-block;
+    width:26px;
+    border-bottom:2px solid;
+    margin-bottom:.3em;
+    margin-right:.4em;
+  }
+}

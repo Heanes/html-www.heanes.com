@@ -1,0 +1,108 @@
+@charset "UTF-8";
+/**
+ * @doc 页面框架样式
+ * @author Heanes
+ * @time 2015-11-21 22:11:30
+ */
+
+$exampleHeaderHeight:30px;
+$exampleFooterHeight:100px;
+$exampleMainContentHeight:600px;
+$exampleMainTopContentHeight:120px;
+$exampleMainBottomContentHeight:120px;
+$exampleMainTopBlockHeight:140px;
+$exampleMainBottomBlockHeight:140px;
+
+/* S 页面框架结构 S */
+/* 页面框架示例布局 */
+.full-frame-example{
+  .header{height:$exampleHeaderHeight;background-color:#f4f4f4;}
+  .footer{height:$exampleFooterHeight;background-color:#686b6c;}
+}
+
+/* S 中间主体 S */
+/* 中心主体上下全宽内容 */
+.main .main-top-block{background:#fff;margin-bottom:12px}
+.main .main-bottom-block{background:#fff;margin-bottom:12px}
+
+.full-frame-example{
+  .main .main-top-block,
+  .main .main-bottom-block{height:$exampleMainTopContentHeight;}
+}
+/* 中心主体上下主宽内容 */
+.main .main-top-content{background:#fff;margin-bottom:12px;}
+.main .main-bottom-content{background:#fff;margin-bottom:12px;}
+
+.full-frame-example{
+  /* 全宽区域 */
+  .main .main-top-content,
+  .main .main-bottom-content{height:$exampleMainTopBlockHeight;}
+}
+/* 中心主体内容 */
+.full-frame-example{
+  .main .main-content{margin-bottom:12px;background-color:#e9e9e9;}
+}
+
+.main .main-content .center-block .center-content{background-color:#fff;}
+.full-frame-example{
+  .main .main-content .center-block{height:$exampleMainContentHeight;}
+  .main .main-content .center-block .center-content{height:100%}
+}
+
+.full-frame-example{
+  /* 左侧工具栏 */
+  .main .main-content .left-block{height:$exampleMainContentHeight;padding-right:10px;}
+  .main .main-content .left-block .left-content{background:#fff;height:100%}
+
+  /* 右侧工具栏 */
+  .main .main-content .right-block{height:$exampleMainContentHeight;padding-left:10px;}
+  .main .main-content .right-block .right-content{background:#fff;height:100%}
+}
+.full-frame-example{
+  .left-bar,
+  .right-bar{position:fixed;z-index:2;top:0;height:100%;}
+  /* 左侧盯住栏 */
+  .left-bar{left:0;width:50px;background:rgba(215,230,233,0.5)}
+  /* 右侧盯住栏 */
+  .right-bar{right:0;width:35px;background:rgba(0,0,0,.5)}
+}
+
+/* E 页面框架结构 E */
+.full-frame-example.marked{
+  .header:before,
+  .footer:before{display:inline-block;width:100%;text-align:center;}
+  .header:before{content:"头部";}
+  .footer:before{content:"脚部";color:#fff;}
+
+  .main .main-top-block:before,
+  .main .main-bottom-block:before,
+  .main .main-top-content:before,
+  .main .main-bottom-content:before{display:inline-block;width:100%;text-align:center;}
+
+  .main .main-top-block:before{content:"顶部全宽";}
+  .main .main-bottom-block:before{content:"底部全宽";}
+  .main .main-top-content:before{content:"主体顶部主体宽";}
+  .main .main-bottom-content:before{content:"主体底部主体宽";}
+
+
+  .main .main-content{position:relative;}
+  .main .main-content:before,
+  .main .main-content .center-block:before{position:absolute;left:0;top:0;width:100%;text-align:center;z-index:2;}
+  .main .main-content:before{content:"中心主体内容大区块";}
+  .main .main-content .center-block:before{content:"中心主体内容中心";top:50%;}
+
+  .main .main-content .left-block,
+  .main .main-content .right-block{height:$exampleMainContentHeight;}
+
+  .main .main-content .left-block,
+  .main .main-content .right-block{position:relative;}
+
+  .main .main-content .left-block:before,
+  .main .main-content .right-block:before,
+  .left-bar:before,.right-bar:before{position:absolute;margin:auto;top:50%;width:1em;transform:translateY(-50%);display:inline-block;}
+  .main .main-content .left-block:before{content:"左侧工具栏";left:2px;}
+  .main .main-content .right-block:before{content:"右侧工具栏";right:2px;}
+
+  .left-bar:before{content:"左侧钉住工具栏";color:#98618b;left:2px;}
+  .right-bar:before{content:"右侧钉住工具栏";color:#fff;right:2px;}
+}
