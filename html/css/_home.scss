@@ -33,8 +33,7 @@
   padding:20px 0;
   line-height:40px;
 
-  // before方式不用多一层dom结构
-  /*&:before{
+  /*.show-bg{
     position:absolute;
     top:0;
     left:0;
@@ -42,21 +41,10 @@
     height:100%;
     background-color:rgba(0, 0, 0, 0.35);
     filter: blur(2px);
-    content:' ';
   }*/
 
-  .show-bg{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color:rgba(0, 0, 0, 0.35);
-    filter: blur(2px);
-  }
-
   .show-content{
-    position:relative;
+
   }
 
   h1{
@@ -72,10 +60,8 @@
   }
   .dash{
     display:inline-block;
-    width:26px;
-    border-bottom:2px solid;
-    margin-bottom:.3em;
-    margin-right:.4em;
+    transform: scale(1.7, 1);
+    margin-right:.3em;
   }
 }
 
@@ -88,18 +74,21 @@
   .next-btn{
     position:relative;
     color:#fff;
-    &:before{
-      position:absolute;
-      width:100%;
-      height:100%;
-      top:0;
-      left:0;
-      background-color:rgba(0,0,0,.3);
-      content:' ';
-      filter: blur(2px);
-    }
-    .btn-icon{
-      position:relative;
-    }
   }
+}
+
+.blur-bg{
+  &:before{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    background-color:rgba(0,0,0,.3);
+    content:' ';
+    filter: blur(2px);
+  }
+}
+.blur-bg > * {
+  position:relative;
 }

@@ -439,7 +439,7 @@ iframe {
   position: relative;
   padding: 20px 0;
   line-height: 40px;
-  /*&:before{
+  /*.show-bg{
     position:absolute;
     top:0;
     left:0;
@@ -447,18 +447,7 @@ iframe {
     height:100%;
     background-color:rgba(0, 0, 0, 0.35);
     filter: blur(2px);
-    content:' ';
   }*/ }
-  .show-full-bg-image .motto-show .show-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.35);
-    filter: blur(2px); }
-  .show-full-bg-image .motto-show .show-content {
-    position: relative; }
   .show-full-bg-image .motto-show h1 {
     font-size: 3.2em; }
   .show-full-bg-image .motto-show .show-text {
@@ -469,10 +458,8 @@ iframe {
       margin-left: 570px; }
   .show-full-bg-image .motto-show .dash {
     display: inline-block;
-    width: 26px;
-    border-bottom: 2px solid;
-    margin-bottom: .3em;
-    margin-right: .4em; }
+    transform: scale(1.7, 1);
+    margin-right: .3em; }
 
 /**
  * @doc 滚屏提示按钮
@@ -482,16 +469,18 @@ iframe {
 .show-next-tips .next-btn {
   position: relative;
   color: #fff; }
-  .show-next-tips .next-btn:before {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.3);
-    content: ' ';
-    filter: blur(2px); }
-  .show-next-tips .next-btn .btn-icon {
-    position: relative; }
+
+.blur-bg:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: ' ';
+  filter: blur(2px); }
+
+.blur-bg > * {
+  position: relative; }
 
 /*# sourceMappingURL=css.css.map */
