@@ -438,7 +438,17 @@ iframe {
 .show-full-bg-image .motto-show {
   position: relative;
   padding: 20px 0;
-  line-height: 40px; }
+  line-height: 40px;
+  /*&:before{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0.35);
+    filter: blur(2px);
+    content:' ';
+  }*/ }
   .show-full-bg-image .motto-show .show-bg {
     position: absolute;
     top: 0;
@@ -463,5 +473,25 @@ iframe {
     border-bottom: 2px solid;
     margin-bottom: .3em;
     margin-right: .4em; }
+
+/**
+ * @doc 滚屏提示按钮
+ * @author Heanes
+ * @time 2017-10-29 20:12:27 周日
+ */
+.show-next-tips .next-btn {
+  position: relative;
+  color: #fff; }
+  .show-next-tips .next-btn:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    content: ' ';
+    filter: blur(2px); }
+  .show-next-tips .next-btn .btn-icon {
+    position: relative; }
 
 /*# sourceMappingURL=css.css.map */
