@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d8348c0-0235-4e7a-97be-7e5f8d4a74f4" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/heanes/static/css/css.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/_home.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/_layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/_layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/_responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/common.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/css.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/css.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/css.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/style/style-2017.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/style/style-2017.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/style/style-2017.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/style/style-2017.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/css/style/style-2017.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/css/style/style-2017.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/image/home/devices-workation.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/image/home/devices-workation.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/index/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/index/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/layout/fullFrame.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/layout/fullFrame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/_home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/_home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/common.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/common.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/css.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/css.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/css.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/css.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/css.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/style/style-2017.css" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/style/style-2017.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/style/style-2017.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/style/style-2017.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/css/style/style-2017.scss" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/image/home/devices-workation.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/image/home/devices-workation.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/index/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/index/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/html/heanes/static/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html/heanes/layout/fullFrame.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +31,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/heanes/index/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+            <state relative-caret-position="289">
+              <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
               <folding>
                 <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
@@ -43,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/html/heanes/css/_home.scss">
+      <file leaf-file-name="_home.scss" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/html/heanes/static/css/_home.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="465">
+              <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -80,8 +80,10 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/html/css/_home.scss" />
         <option value="$PROJECT_DIR$/html/index/home.html" />
-        <option value="$PROJECT_DIR$/html/heanes/index/home.html" />
         <option value="$PROJECT_DIR$/html/heanes/css/_home.scss" />
+        <option value="$PROJECT_DIR$/html/heanes/css/css.scss" />
+        <option value="$PROJECT_DIR$/html/heanes/static/css/_home.scss" />
+        <option value="$PROJECT_DIR$/html/heanes/index/home.html" />
       </list>
     </option>
   </component>
@@ -125,20 +127,6 @@
               <item name="www.html.heanes.com" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="heanes" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www.html.heanes.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www.html.heanes.com" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="heanes" type="462c0819:PsiDirectoryNode" />
-              <item name="image" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="www.html.heanes.com" type="b2602c69:ProjectViewProjectNode" />
-              <item name="www.html.heanes.com" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-              <item name="heanes" type="462c0819:PsiDirectoryNode" />
               <item name="index" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -146,14 +134,15 @@
               <item name="www.html.heanes.com" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="heanes" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="www.html.heanes.com" type="b2602c69:ProjectViewProjectNode" />
               <item name="www.html.heanes.com" type="462c0819:PsiDirectoryNode" />
               <item name="html" type="462c0819:PsiDirectoryNode" />
               <item name="heanes" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -174,14 +163,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.SCSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/html/heanes" />
-      <recent name="$PROJECT_DIR$/html" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/html/index" />
       <recent name="$PROJECT_DIR$/html/css" />
       <recent name="$PROJECT_DIR$/html/layout" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/html/heanes/static" />
+      <recent name="$PROJECT_DIR$/html/heanes" />
+      <recent name="$PROJECT_DIR$/html" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -215,12 +205,12 @@
       <workItem from="1521516889134" duration="3725000" />
       <workItem from="1522318386155" duration="46000" />
       <workItem from="1522319606204" duration="1761000" />
-      <workItem from="1522657281453" duration="579000" />
+      <workItem from="1522657281453" duration="2725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35075000" />
+    <option name="totallyTimeSpent" value="37221000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="8" y="23" width="1902" height="1114" extended-state="0" />
@@ -231,10 +221,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32908913" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3284169" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32940018" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -270,28 +260,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
@@ -305,49 +295,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
@@ -361,21 +351,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
@@ -389,21 +379,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
@@ -417,21 +407,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="26" column="15" lean-forward="true" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" lean-forward="true" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
@@ -446,49 +436,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/common.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/common.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="16" column="79" selection-start-line="16" selection-start-column="79" selection-end-line="16" selection-end-column="79" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/layout/fullFrame.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-376" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/style/style-2017.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/style/style-2017.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="36" column="1" selection-start-line="36" selection-start-column="1" selection-end-line="36" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.css">
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/css.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/layout/fullFrame.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="15" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="15" />
+        <state relative-caret-position="-109">
+          <caret line="18" column="66" lean-forward="true" selection-start-line="18" selection-start-column="66" selection-end-line="18" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/heanes/css/_home.scss">
+    <entry file="file://$PROJECT_DIR$/html/heanes/css/_layout.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="-614" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/html/heanes/index/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="23" column="26" lean-forward="true" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        <state relative-caret-position="289">
+          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding>
             <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/heanes/static/css/_home.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="19" lean-forward="true" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
         </state>
       </provider>
     </entry>

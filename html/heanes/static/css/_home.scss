@@ -4,13 +4,9 @@
  * @author Heanes
  * @time 2017-10-28 23:50:49 周六
  */
-html.full-width-height,html.full-width-height body{
+.full-width-height{
   width:100%;
   height:100%;
-  .wrap{
-    height:inherit;
-
-  }
 }
 /**
  * @doc 顶部全屏展示区域
