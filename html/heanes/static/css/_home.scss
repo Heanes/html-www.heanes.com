@@ -7,6 +7,10 @@
 html.full-width-height,html.full-width-height body{
   width:100%;
   height:100%;
+  .wrap{
+    height:inherit;
+
+  }
 }
 /**
  * @doc 顶部全屏展示区域
