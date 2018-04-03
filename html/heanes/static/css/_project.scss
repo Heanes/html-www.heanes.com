@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/**
+ * @doc card列表
+ * @author Heanes
+ * @time 2018-04-02 21:56:24 周一
+ */
+$carWidth:320px;
+$carWrapBoxShadow:0 0 2px 2px rgba(212, 218, 231, 0.6);
+$carWrapBoxHoverShadow:0 0 16px 2px rgba(167, 201, 255, 0.6);
+$cardInfoBorderColor:#eee;
+$cardWrapBorderRadius:4px;
+$cardImgHeight:200px;
+
+$cardNameFontSize:14px;
+$cardTypeFontSize:13px;
+$cardTypeColor:#888;
+$cardInfoItemFontSize:14px;
+$cardInfoItemColor:#888;
+
+.card-list{
+  margin:20px;
+
+  .card-wrap{
+    display:inline-block;
+    width:$carWidth;
+    margin:0 10px 10px 0;
+    vertical-align:top;
+    box-shadow:$carWrapBoxShadow;
+    border-radius:$cardWrapBorderRadius;
+
+    &:hover{
+      box-shadow:$carWrapBoxHoverShadow;
+      animation:glow 1s infinite alternate ease-in-out
+    }
+
+    a{
+      color:#444;
+    }
+
+    .card-img{
+      height:$cardImgHeight;
+
+      .card-img-link{
+        display:block;
+        width:100%;
+        height:100%;
+        text-align:center;
+
+        img{
+          max-width:100%;
+          max-height:100%;
+        }
+      }
+
+    }
+
+    .card-info{
+      height:75px;
+      padding:0 10px;
+      border-bottom:1px solid $cardInfoBorderColor;
+      margin-top:4px;
+
+      .card-name, .card-type, .card-info-item{
+        margin-bottom:2px;
+      }
+
+      .card-name{
+        font-size:$cardNameFontSize;
+      }
+
+      .card-type{
+        font-size:$cardTypeFontSize;
+        color:$cardTypeColor;
+        a{
+          color:$cardTypeColor;
+        }
+      }
+
+      .card-info-item{
+        margin-top:10px;
+        font-size:$cardInfoItemFontSize;
+        color:$cardInfoItemColor;
+        span{
+          margin-right:10px;
+          i{
+            margin-right:4px;
+          }
+        }
+      }
+
+    }
+
+    .card-authority{
+      height:60px;
+      padding:0 10px;
+      line-height:60px;
+      font-size:0;
+
+      .author, .update-time{
+        font-size:13px;
+        display:inline-block;
+        width:50%;
+        vertical-align:top;
+      }
+      .author{
+        display:inline-block;
+        .user-avatar{
+          width:40px;
+          height:40px;
+          margin:0 4px;
+          border-radius:50%;
+          background:#fff center/100% 100% no-repeat;
+          transition:all .8s ease-in-out;
+          &:hover{
+            transform:rotate(360deg) scale(1.3);
+            animation:glow 1s infinite alternate ease-in-out
+          }
+        }
+
+        .user-avatar, .user-name{
+          display:inline-block;
+          vertical-align:middle;
+        }
+
+      }
+
+      .update-time{
+        font-size:12px;
+        text-align:right;
+      }
+
+    }
+  }
+}
+
+@keyframes glow{
+  0%{
+    box-shadow:0 0 12px rgba(72, 106, 170, 0.5);
+    border-color:rgba(160, 179, 214, 0.5);
+  }
+  100%{
+    box-shadow:0 0 12px rgba(72, 106, 170, 1.0), 0 0 18px rgba(0, 140, 255, 1.0);
+    border-color:rgba(160, 179, 214, 1.0);
+  }
+}
