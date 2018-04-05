@@ -4,12 +4,16 @@
  * @author Heanes
  * @time 2018-04-02 21:56:24 周一
  */
-$carWidth:320px;
+$cardListMargin:20px;
+$cardWrapWidth:320px;
 $carWrapBoxShadow:0 0 2px 2px rgba(212, 218, 231, 0.6);
 $carWrapBoxHoverShadow:0 0 16px 2px rgba(167, 201, 255, 0.6);
 $cardInfoBorderColor:#eee;
 $cardWrapBorderRadius:4px;
 $cardImgHeight:200px;
+$cardWrapMarginLeft:0;
+$cardWrapMarginRight:14px;
+$cardWrapMargin:0 $cardWrapMarginRight 20px $cardWrapMarginLeft;
 
 $cardNameFontSize:14px;
 $cardTypeFontSize:13px;
@@ -17,16 +21,30 @@ $cardTypeColor:#888;
 $cardInfoItemFontSize:14px;
 $cardInfoItemColor:#888;
 
+$cardTypeNameBorder:4px solid #3347bf;
+.card-type{
+  margin:$cardListMargin;
+
+  .type-name{
+    border-bottom:$cardTypeNameBorder;
+    padding-bottom:2px;
+    line-height:40px;
+  }
+}
+
+
 .card-list{
-  margin:20px;
+  margin:$cardListMargin;
+  font-size:0;
 
   .card-wrap{
     display:inline-block;
-    width:$carWidth;
-    margin:0 10px 10px 0;
+    width:$cardWrapWidth;
+    margin:$cardWrapMargin;
     vertical-align:top;
     box-shadow:$carWrapBoxShadow;
     border-radius:$cardWrapBorderRadius;
+    overflow:hidden;
 
     &:hover{
       box-shadow:$carWrapBoxHoverShadow;
@@ -39,36 +57,44 @@ $cardInfoItemColor:#888;
 
     .card-img{
       height:$cardImgHeight;
+      overflow:hidden;
 
       .card-img-link{
         display:block;
         width:100%;
         height:100%;
         text-align:center;
+        background-color:#fff;
 
         img{
           max-width:100%;
           max-height:100%;
+        }
+
+        transition:all .8s ease-in-out;
+        &:hover{
+          transform:scale(1.3);
         }
       }
 
     }
 
     .card-info{
-      height:75px;
+      height:80px;
+      line-height:20px;
       padding:0 10px;
       border-bottom:1px solid $cardInfoBorderColor;
       margin-top:4px;
 
-      .card-name, .card-type, .card-info-item{
-        margin-bottom:2px;
+      .card-name, .card-category, .card-info-item{
+        margin-bottom:4px;
       }
 
       .card-name{
         font-size:$cardNameFontSize;
       }
 
-      .card-type{
+      .card-category{
         font-size:$cardTypeFontSize;
         color:$cardTypeColor;
         a{
@@ -107,12 +133,13 @@ $cardInfoItemColor:#888;
         .user-avatar{
           width:40px;
           height:40px;
-          margin:0 4px;
+          margin:0 8px 0 4px;
           border-radius:50%;
           background:#fff center/100% 100% no-repeat;
           transition:all .8s ease-in-out;
           &:hover{
-            transform:rotate(360deg) scale(1.3);
+            //transform:rotate(360deg) ;
+            transform:scale(1.3);
             animation:glow 1s infinite alternate ease-in-out
           }
         }
@@ -132,6 +159,15 @@ $cardInfoItemColor:#888;
     }
   }
 }
+
+@media screen and (max-width: 970px){
+  .card-list{
+    text-align:center;
+    .card-wrap{
+    }
+  }
+}
+
 
 @keyframes glow{
   0%{
