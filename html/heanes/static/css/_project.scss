@@ -11,6 +11,10 @@ $carWrapBoxHoverShadow:0 0 16px 2px rgba(167, 201, 255, 0.6);
 $cardInfoBorderColor:#eee;
 $cardWrapBorderRadius:4px;
 $cardImgHeight:200px;
+// 动画偏移计算
+$cardImgScale:1.3;
+$cardImgTranslate: (0.5 - (0.5 / $cardImgScale))*100%;
+
 $cardWrapMarginLeft:0;
 $cardWrapMarginRight:14px;
 $cardWrapMargin:0 $cardWrapMarginRight 20px $cardWrapMarginLeft;
@@ -81,7 +85,7 @@ $cardTypeNameBorder:4px solid #3347bf;
 
       transition:all .8s ease-in-out;
       &:hover{
-        transform:scale(1.3) translateY(11%) translateX(11%);
+        transform:scale($cardImgScale) translateY($cardImgTranslate) translateX($cardImgTranslate);
         animation:enlargeBackground 8s 1s infinite alternate;
       }
     }
@@ -199,18 +203,18 @@ $cardTypeNameBorder:4px solid #3347bf;
  */
 @keyframes enlargeBackground{
   0%{
-    transform:scale(1.3) translateY(11%) translateX(11%);
+    transform:scale($cardImgScale) translateY($cardImgTranslate) translateX($cardImgTranslate);
   }
   25%{
-    transform:scale(1.3) translateY(11%) translateX(-11%);
+    transform:scale($cardImgScale) translateY($cardImgTranslate) translateX(-$cardImgTranslate);
   }
   50%{
-    transform:scale(1.3) translateY(-11%) translateX(-11%);
+    transform:scale($cardImgScale) translateY(-$cardImgTranslate) translateX(-$cardImgTranslate);
   }
   75%{
-    transform:scale(1.3) translateY(-11%) translateX(11%);
+    transform:scale($cardImgScale) translateY(-$cardImgTranslate) translateX($cardImgTranslate);
   }
   100%{
-    transform:scale(1.3) translateY(11%) translateX(11%);
+    transform:scale($cardImgScale) translateY($cardImgTranslate) translateX($cardImgTranslate);
   }
 }
