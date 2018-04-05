@@ -79,10 +79,13 @@ $cardTypeNameBorder:4px solid #3347bf;
 
     }
 
+    .card-info, .card-authority{
+      padding:0 10px;
+      text-align:left;
+    }
     .card-info{
       height:80px;
       line-height:20px;
-      padding:0 10px;
       border-bottom:1px solid $cardInfoBorderColor;
       margin-top:4px;
 
@@ -118,7 +121,6 @@ $cardTypeNameBorder:4px solid #3347bf;
 
     .card-authority{
       height:60px;
-      padding:0 10px;
       line-height:60px;
       font-size:0;
 
@@ -129,7 +131,6 @@ $cardTypeNameBorder:4px solid #3347bf;
         vertical-align:top;
       }
       .author{
-        display:inline-block;
         .user-avatar{
           width:40px;
           height:40px;
