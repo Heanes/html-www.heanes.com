@@ -22,6 +22,13 @@ $cardInfoItemFontSize:14px;
 $cardInfoItemColor:#888;
 
 $cardTypeNameBorder:4px solid #3347bf;
+
+@mixin textOverFlowEllipsis{
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  overflow:hidden;
+}
+
 .card-type{
   margin:$cardListMargin;
 
@@ -70,13 +77,13 @@ $cardTypeNameBorder:4px solid #3347bf;
           max-width:100%;
           max-height:100%;
         }
-
-        transition:all .8s ease-in-out;
-        &:hover{
-          transform:scale(1.3);
-        }
       }
 
+      transition:all .8s ease-in-out;
+      &:hover{
+        transform:scale(1.3) translateY(11%) translateX(11%);
+        animation:enlargeBackground 8s 1s infinite alternate;
+      }
     }
 
     .card-info, .card-authority{
@@ -124,13 +131,13 @@ $cardTypeNameBorder:4px solid #3347bf;
       line-height:60px;
       font-size:0;
 
-      .author, .update-time{
-        font-size:13px;
+      .author-link, .update-time{
         display:inline-block;
         width:50%;
         vertical-align:top;
       }
-      .author{
+      .author-link{
+        font-size:13px;
         .user-avatar{
           width:40px;
           height:40px;
@@ -139,7 +146,6 @@ $cardTypeNameBorder:4px solid #3347bf;
           background:#fff center/100% 100% no-repeat;
           transition:all .8s ease-in-out;
           &:hover{
-            //transform:rotate(360deg) ;
             transform:scale(1.3);
             animation:glow 1s infinite alternate ease-in-out
           }
@@ -148,6 +154,11 @@ $cardTypeNameBorder:4px solid #3347bf;
         .user-avatar, .user-name{
           display:inline-block;
           vertical-align:middle;
+        }
+
+        .user-name{
+          width:90px;
+          @include textOverFlowEllipsis;
         }
 
       }
@@ -178,5 +189,28 @@ $cardTypeNameBorder:4px solid #3347bf;
   100%{
     box-shadow:0 0 12px rgba(72, 106, 170, 1.0), 0 0 18px rgba(0, 140, 255, 1.0);
     border-color:rgba(160, 179, 214, 1.0);
+  }
+}
+
+/**
+ * @doc 放大显示，并且从左上角->右上角->右下角->左下角移动
+ * @author Heanes
+ * @time 2018-04-05 22:36:38 周四
+ */
+@keyframes enlargeBackground{
+  0%{
+    transform:scale(1.3) translateY(11%) translateX(11%);
+  }
+  25%{
+    transform:scale(1.3) translateY(11%) translateX(-11%);
+  }
+  50%{
+    transform:scale(1.3) translateY(-11%) translateX(-11%);
+  }
+  75%{
+    transform:scale(1.3) translateY(-11%) translateX(11%);
+  }
+  100%{
+    transform:scale(1.3) translateY(11%) translateX(11%);
   }
 }
