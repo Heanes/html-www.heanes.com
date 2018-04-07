@@ -21,81 +21,71 @@
 }*/
 /* PC */
 /* 此模式下左右工具栏展现 */
-@media screen and (min-width: 1367px) {
-  .main-wrap {
-    width: 94%;
-    max-width: 1740px; }
+.responsive {
+  /* NoteBook */
+  /* 此宽度下不显示侧栏 */
+  /* ipad */
+  /* iPhone 6plus */
+  /* iPhone 6 */
+  /* iPhone 3 4 5 */
+  /* Android and + */
+  /* Android and + */
+  /* 设备分辨率媒体查询 */ }
+  @media screen and (min-width: 1367px) {
+    .responsive .main-wrap {
+      width: 94%;
+      max-width: 1740px; }
+      .responsive .main-wrap .left-wrap {
+        position: relative;
+        width: 260px;
+        margin-right: -260px;
+        z-index: 2; }
+      .responsive .main-wrap .right-wrap {
+        position: relative;
+        width: 260px;
+        margin-left: -260px; }
+    .responsive .center-wrap {
+      width: 100%;
+      position: relative; }
+      .responsive .center-wrap .center-content {
+        position: relative;
+        margin-left: 260px;
+        margin-right: 260px; }
+    .responsive .right-fix-block .right-corner {
+      margin-left: 679px; } }
+  @media screen and (max-width: 1366px) {
+    .responsive .main-wrap {
+      width: 1200px; }
+    .responsive .center-wrap {
+      width: 100%;
+      position: relative; }
+    .responsive .center-wrap .center-content {
+      position: relative;
+      margin-right: 260px; }
+    .responsive .main-content .right-wrap {
+      position: relative;
+      width: 260px;
+      margin-left: -260px; }
+    .responsive .left-wrap, .responsive .left-bar, .responsive .right-bar {
+      display: none; } }
+  @media screen and (max-width: 1200px) {
+    .responsive .main-wrap {
+      width: 100%;
+      float: none; }
+    .responsive .center-wrap {
+      width: 100%; } }
+  @media screen and (max-width: 767px) {
+    .responsive .center-wrap .center-content {
+      position: relative;
+      margin-right: 0; }
+    .responsive .right-wrap {
+      display: none; } }
+  @media screen and (max-width: 479px) {
+    .responsive h1, .responsive h2 {
+      font-size: 16px; }
+    .responsive h3 {
+      font-size: 14px; } }
 
-  .main-content .left-wrap {
-    position: relative;
-    width: 260px;
-    margin-right: -260px;
-    z-index: 2; }
-
-  .main-content .right-wrap {
-    position: relative;
-    width: 260px;
-    margin-left: -260px; }
-
-  .center-wrap {
-    width: 100%;
-    position: relative; }
-
-  .center-wrap .center-content {
-    position: relative;
-    margin-left: 260px;
-    margin-right: 260px; }
-
-  .right-fix-block .right-corner {
-    margin-left: 679px; } }
-/* NoteBook */
-/* 此宽度下不显示侧栏 */
-@media screen and (max-width: 1366px) {
-  .main-wrap {
-    width: 1200px; }
-
-  .center-wrap {
-    width: 100%;
-    position: relative; }
-
-  .center-wrap .center-content {
-    position: relative;
-    margin-right: 260px; }
-
-  .main-content .right-wrap {
-    position: relative;
-    width: 260px;
-    margin-left: -260px; }
-
-  .left-wrap, .left-bar, .right-bar {
-    display: none; } }
-@media screen and (max-width: 1200px) {
-  .main-wrap {
-    width: 100%;
-    float: none; }
-
-  .center-wrap {
-    width: 100%; } }
-@media screen and (max-width: 767px) {
-  .center-wrap .center-content {
-    position: relative;
-    margin-right: 0; }
-
-  .right-wrap {
-    display: none; } }
-/* ipad */
-@media screen and (max-width: 479px) {
-  h1, h2 {
-    font-size: 16px; }
-
-  h3 {
-    font-size: 14px; } }
-/* iPhone 6plus */
-/* iPhone 6 */
-/* iPhone 3 4 5 */
-/* Android and + */
-/* Android and + */
-/* 设备分辨率媒体查询 */
 /**
  * @doc common
  */
@@ -326,20 +316,32 @@ iframe {
  * @author Heanes
  * @time 2018-04-02 21:56:24 周一
  */
-.card-type {
-  margin: 20px; }
-  .card-type .type-name {
-    border-bottom: 4px solid #3347bf;
-    padding-bottom: 2px;
-    line-height: 40px; }
+.card-type, .card-list {
+  margin: 10px; }
+
+.card-type .type-name {
+  border-bottom: 4px solid #3347bf;
+  padding-bottom: 2px;
+  line-height: 40px; }
+  .card-type .type-name.frontend {
+    color: #3347bf;
+    border-color: #3347bf; }
+  .card-type .type-name.backend {
+    color: #79bf78;
+    border-color: #79bf78; }
+  .card-type .type-name.operation {
+    color: #bf3a85;
+    border-color: #bf3a85; }
+  .card-type .type-name.client {
+    color: #1bbf9e;
+    border-color: #1bbf9e; }
 
 .card-list {
-  margin: 20px;
   font-size: 0; }
   .card-list .card-wrap {
     display: inline-block;
     width: 320px;
-    margin: 0 14px 20px 0;
+    margin: 0 10px 16px 0;
     vertical-align: top;
     box-shadow: 0 0 2px 2px rgba(212, 218, 231, 0.6);
     border-radius: 4px;
@@ -397,10 +399,16 @@ iframe {
       .card-list .card-wrap .card-authority .author-link, .card-list .card-wrap .card-authority .update-time {
         display: inline-block;
         width: 50%;
-        vertical-align: top; }
+        vertical-align: top;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
       .card-list .card-wrap .card-authority .author-link {
+        position: relative;
         font-size: 13px; }
         .card-list .card-wrap .card-authority .author-link .user-avatar {
+          position: absolute;
+          top: 10px;
           width: 40px;
           height: 40px;
           margin: 0 8px 0 4px;
@@ -410,11 +418,8 @@ iframe {
           .card-list .card-wrap .card-authority .author-link .user-avatar:hover {
             transform: scale(1.3);
             animation: glow 1s infinite alternate ease-in-out; }
-        .card-list .card-wrap .card-authority .author-link .user-avatar, .card-list .card-wrap .card-authority .author-link .user-name {
-          display: inline-block;
-          vertical-align: middle; }
         .card-list .card-wrap .card-authority .author-link .user-name {
-          width: 90px;
+          margin-left: 52px;
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden; }
@@ -424,7 +429,9 @@ iframe {
 
 @media screen and (max-width: 970px) {
   .card-list {
-    text-align: center; } }
+    text-align: center; }
+    .card-list .card-wrap {
+      margin: 0 auto 16px; } }
 @keyframes glow {
   0% {
     box-shadow: 0 0 12px rgba(72, 106, 170, 0.5);

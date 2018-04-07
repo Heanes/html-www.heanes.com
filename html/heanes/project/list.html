@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="../static/css/css.css"/>
 <title>Project list</title>
 </head>
-<body class="full-frame-example marked">
+<body class="scrollbar scrollbar-mini">
 <!-- S 左侧功能区 S -->
 <div class="left-bar clearfix">
     <div class="left-bar-content"></div>
@@ -39,7 +39,7 @@
             <!-- 顶部内容 -->
             <div class="main-top-content"></div>
             <!-- 主体内容 -->
-            <div class="main-content">
+            <div class="main-content clearfix">
                 <!-- 左侧区域 -->
                 <div class="left-block left-wrap fl">
                     <div class="left-content"></div>
@@ -47,60 +47,234 @@
                 <!-- 中心区域 -->
                 <div class="center-block center-wrap fl">
                     <div class="center-content">
-                        <div class="card-list-wrap"></div>
                         <!-- S 作品列表 -->
-                        <div class="card-type">
-                            <h2 class="type-name">前端</h2>
-                        </div>
-                        <div class="card-list">
-                            <div class="card-wrap card-link">
-                                <div class="card-img">
-                                    <a href="detail.html" class="card-img-link">
-                                        <img src="../static/image/project/heanesUI/heanesUI.png">
-                                    </a>
+                        <div class="card-list-wrap">
+                            <div class="card-type-item">
+                                <div class="card-type">
+                                    <h2 class="type-name frontend">前端 • Frontend</h2>
                                 </div>
-                                <div class="card-info">
-                                    <p class="card-name"><a href="detail.html">heanesUI</a></p>
-                                    <p class="card-category">
-                                        <a href="list.html">前端</a> / <a href="list.html">UI</a>
-                                    </p>
-                                    <p class="card-info-item">
-                                        <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
-                                        <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
-                                        <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
-                                    </p>
-                                </div>
-                                <div class="card-authority">
-                                    <a href="list.html" class="author-link" target="_blank" title="Heanes">
-                                        <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
-                                        <span class="user-name">Heanes很长的名字怎么办呢真的</span>
-                                    </a>
-                                    <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                <div class="card-list">
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/heanesUI/heanesUI_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">heanesUI</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">前端</a> / <a href="list.html">UI</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes很长的名字怎么办呢真的</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/treeView.js/treeView.js_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">treeView.js</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">前端</a> / <a href="list.html">jQuery插件</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/stringMask.js/stringMask.js_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">stringMask.js</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">前端</a> / <a href="list.html">jQuery插件</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card-wrap card-link">
-                                <div class="card-img">
-                                    <a href="detail.html" class="card-img-link">
-                                        <img src="../static/image/project/stringMask.js/stringMask.js_demo.png">
-                                    </a>
+                            <div class="card-type-item">
+                                <div class="card-type">
+                                    <h2 class="type-name backend">后端 • Backend</h2>
                                 </div>
-                                <div class="card-info">
-                                    <p class="card-name"><a href="detail.html">stringMask.js</a></p>
-                                    <p class="card-category">
-                                        <a href="list.html">前端</a> / <a href="list.html">jQuery插件</a>
-                                    </p>
-                                    <p class="card-info-item">
-                                        <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
-                                        <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
-                                        <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
-                                    </p>
+                                <div class="card-list">
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/heanesUI/heanesUI_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">DMS-php</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">后端</a> / <a href="list.html">工具</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/heanesUI/heanesUI_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">DMS-java</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">后端</a> / <a href="list.html">工具</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="card-authority">
-                                    <a href="list.html" class="author-link" target="_blank" title="Heanes">
-                                        <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
-                                        <span class="user-name">Heanes</span>
-                                    </a>
-                                    <span class="update-time">2018-04-03 16:53:53 周二</span>
+                            </div>
+                            <div class="card-type-item">
+                                <div class="card-type">
+                                    <h2 class="type-name operation">运营 • Operation</h2>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/heanesUI/heanesUI_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">津言乐语</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">运营</a> / <a href="list.html">内容运营</a> / <a href="list.html">微信公众号</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/stringMask.js/stringMask.js_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">我要完成它</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">运营</a> / <a href="list.html">内容运营</a> / <a href="list.html">微博</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-type-item">
+                                <div class="card-type">
+                                    <h2 class="type-name client">客户端 • Client</h2>
+                                </div>
+                                <div class="card-list">
+                                    <div class="card-wrap card-link">
+                                        <div class="card-img">
+                                            <a href="detail.html" class="card-img-link">
+                                                <img src="../static/image/project/stringMask.js/stringMask.js_screenshot.png">
+                                            </a>
+                                        </div>
+                                        <div class="card-info">
+                                            <p class="card-name"><a href="detail.html">我要完成它</a></p>
+                                            <p class="card-category">
+                                                <a href="list.html">客户端</a> / <a href="list.html">iOS</a>
+                                            </p>
+                                            <p class="card-info-item">
+                                                <span class="statistics-view"><i class="fa fa-eye"></i>2433</span>
+                                                <span class="statistics-comment"><i class="fa fa-commenting-o" aria-hidden="true"></i>34</span>
+                                                <span class="statistics-recommend"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>95</span>
+                                            </p>
+                                        </div>
+                                        <div class="card-authority">
+                                            <a href="list.html" class="author-link" target="_blank" title="Heanes">
+                                                <span class="user-avatar" style="background-image:url(../static/image/user/avatar/heanes_656x656.jpg)"></span>
+                                                <span class="user-name">Heanes</span>
+                                            </a>
+                                            <span class="update-time">2018-04-03 16:53:53 周二</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
