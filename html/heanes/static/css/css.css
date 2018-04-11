@@ -316,6 +316,11 @@ iframe {
  * @author Heanes
  * @time 2018-04-02 21:56:24 周一
  */
+/**
+ * @doc 超出后用省略号展示
+ * @author Heanes
+ * @time 2018-04-05 23:11:07 周四
+ */
 .card-type, .card-list {
   margin: 10px; }
 
@@ -323,7 +328,7 @@ iframe {
   border-bottom: 4px solid #3347bf;
   padding-bottom: 2px;
   line-height: 40px; }
-  .card-type .type-name.frontend {
+  .card-type .type-name.frontEnd {
     color: #3347bf;
     border-color: #3347bf; }
   .card-type .type-name.backend {
@@ -335,12 +340,15 @@ iframe {
   .card-type .type-name.client {
     color: #1bbf9e;
     border-color: #1bbf9e; }
+  .card-type .type-name.translate {
+    color: #bfb432;
+    border-color: #bfb432; }
 
 .card-list {
   font-size: 0; }
   .card-list .card-wrap {
     display: inline-block;
-    width: 320px;
+    width: 300px;
     margin: 0 10px 16px 0;
     vertical-align: top;
     box-shadow: 0 0 2px 2px rgba(212, 218, 231, 0.6);
@@ -425,7 +433,8 @@ iframe {
           overflow: hidden; }
       .card-list .card-wrap .card-authority .update-time {
         font-size: 12px;
-        text-align: right; }
+        text-align: right;
+        letter-spacing: -0.1px; }
 
 @media screen and (max-width: 970px) {
   .card-list {
