@@ -322,7 +322,7 @@ iframe {
  * @time 2018-04-05 23:11:07 周四
  */
 .card-type, .card-list {
-  margin: 10px; }
+  padding: 10px; }
 
 .card-type .type-name {
   border-bottom: 4px solid #3347bf;
@@ -348,11 +348,12 @@ iframe {
   font-size: 0; }
   .card-list .card-wrap {
     display: inline-block;
-    width: 300px;
-    margin: 0 10px 16px 0;
+    width: 284px;
+    margin: 0 8px 16px 8px;
     vertical-align: top;
     box-shadow: 0 0 2px 2px rgba(212, 218, 231, 0.6);
     border-radius: 4px;
+    background-color: #fff;
     overflow: hidden; }
     .card-list .card-wrap:hover {
       box-shadow: 0 0 16px 2px rgba(167, 201, 255, 0.6);
@@ -376,7 +377,7 @@ iframe {
         transform: scale(1.3) translateY(11.5384615385%) translateX(11.5384615385%);
         animation: enlargeBackground 8s 1s infinite alternate; }
     .card-list .card-wrap .card-info, .card-list .card-wrap .card-authority {
-      padding: 0 10px;
+      padding: 0 4px;
       text-align: left; }
     .card-list .card-wrap .card-info {
       height: 80px;
@@ -407,13 +408,13 @@ iframe {
       .card-list .card-wrap .card-authority .author-link, .card-list .card-wrap .card-authority .update-time {
         display: inline-block;
         width: 50%;
-        vertical-align: top;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        overflow: hidden; }
+        vertical-align: top; }
       .card-list .card-wrap .card-authority .author-link {
         position: relative;
         font-size: 13px; }
+        .card-list .card-wrap .card-authority .author-link .user-avatar, .card-list .card-wrap .card-authority .author-link .user-name {
+          display: inline-block;
+          vertical-align: middle; }
         .card-list .card-wrap .card-authority .author-link .user-avatar {
           position: absolute;
           top: 10px;
@@ -427,14 +428,18 @@ iframe {
             transform: scale(1.3);
             animation: glow 1s infinite alternate ease-in-out; }
         .card-list .card-wrap .card-authority .author-link .user-name {
-          margin-left: 52px;
+          width: 100%;
+          padding-left: 52px;
           text-overflow: ellipsis;
           white-space: nowrap;
           overflow: hidden; }
       .card-list .card-wrap .card-authority .update-time {
         font-size: 12px;
         text-align: right;
-        letter-spacing: -0.1px; }
+        letter-spacing: -0.1px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden; }
 
 @media screen and (max-width: 970px) {
   .card-list {
