@@ -360,6 +360,8 @@ iframe {
       animation: glow 1s infinite alternate ease-in-out; }
     .card-list .card-wrap a {
       color: #444; }
+      .card-list .card-wrap a:hover {
+        color: #008cff; }
     .card-list .card-wrap .card-img {
       height: 200px;
       overflow: hidden;
@@ -377,13 +379,13 @@ iframe {
         transform: scale(1.3) translateY(11.5384615385%) translateX(11.5384615385%);
         animation: enlargeBackground 8s 1s infinite alternate; }
     .card-list .card-wrap .card-info, .card-list .card-wrap .card-authority {
-      padding: 0 4px;
       text-align: left; }
     .card-list .card-wrap .card-info {
       height: 80px;
       line-height: 20px;
       border-bottom: 1px solid #eee;
-      margin-top: 4px; }
+      margin-top: 4px;
+      padding: 0 10px; }
       .card-list .card-wrap .card-info .card-name, .card-list .card-wrap .card-info .card-category, .card-list .card-wrap .card-info .card-info-item {
         margin-bottom: 4px; }
       .card-list .card-wrap .card-info .card-name {
@@ -397,14 +399,19 @@ iframe {
         margin-top: 10px;
         font-size: 14px;
         color: #888; }
-        .card-list .card-wrap .card-info .card-info-item span {
+        .card-list .card-wrap .card-info .card-info-item .item {
           margin-right: 10px; }
-          .card-list .card-wrap .card-info .card-info-item span i {
+          .card-list .card-wrap .card-info .card-info-item .item i {
             margin-right: 4px; }
+          .card-list .card-wrap .card-info .card-info-item .item a {
+            color: inherit; }
+            .card-list .card-wrap .card-info .card-info-item .item a:hover {
+              color: #008cff; }
     .card-list .card-wrap .card-authority {
       height: 60px;
       line-height: 60px;
-      font-size: 0; }
+      font-size: 0;
+      padding: 0 4px; }
       .card-list .card-wrap .card-authority .author-link, .card-list .card-wrap .card-authority .update-time {
         display: inline-block;
         width: 50%;

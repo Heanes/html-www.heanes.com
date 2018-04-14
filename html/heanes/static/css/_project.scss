@@ -4,6 +4,7 @@
  * @author Heanes
  * @time 2018-04-02 21:56:24 周一
  */
+$aHoverColor:#008cff;
 $cardListPadding:10px;
 $cardWrapWidth:284px;
 $carWrapBoxShadow:0 0 2px 2px rgba(212, 218, 231, 0.6);
@@ -97,6 +98,9 @@ $cardTypeColorMap:(
 
     a{
       color:#444;
+      &:hover{
+        color:$aHoverColor;
+      }
     }
 
     .card-img{
@@ -124,7 +128,6 @@ $cardTypeColorMap:(
     }
 
     .card-info, .card-authority{
-      padding:0 4px;
       text-align:left;
     }
     .card-info{
@@ -132,6 +135,7 @@ $cardTypeColorMap:(
       line-height:20px;
       border-bottom:1px solid $cardInfoBorderColor;
       margin-top:4px;
+      padding:0 10px;
 
       .card-name, .card-category, .card-info-item{
         margin-bottom:4px;
@@ -153,20 +157,26 @@ $cardTypeColorMap:(
         margin-top:10px;
         font-size:$cardInfoItemFontSize;
         color:$cardInfoItemColor;
-        span{
+        .item{
           margin-right:10px;
           i{
             margin-right:4px;
           }
+          a{
+            color:inherit;
+            &:hover{
+              color:$aHoverColor;
+            }
+          }
         }
       }
-
     }
 
     .card-authority{
       height:$cardAuthorityHeight;
       line-height:$cardAuthorityHeight;
       font-size:0;
+      padding:0 4px;
 
       .author-link, .update-time{
         display:inline-block;
