@@ -32,33 +32,27 @@ $cardInfoItemColor:#888;
 $cardTypeNameBorder:4px;
 $aHoverColor:#008cff;
 
-/**
- * @doc 超出后用省略号展示
- * @author Heanes
- * @time 2018-04-05 23:11:07 周四
- */
-@mixin textOverFlowEllipsis{
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  overflow:hidden;
-}
-
 // 定义不同类型的颜色值
 $frontendColor:#3347bf;
 $backendColor:#79bf78;
 $operationColor:#bf3a85;
 $clientColor:#1bbf9e;
 $translateColor:#bfb432;
+$todoColor:#bf0100;
 $cardTypeColorMap:(
         frontend:   $frontendColor,
         backend:    $backendColor,
         operation:  $operationColor,
         client:     $clientColor,
         translate:  $translateColor,
+        todo:       $todoColor,
 );
 
+.card-type-list-wrap{
+  padding:0 $cardListPadding;
+}
 .card-type-item{
-  padding:$cardListPadding;
+  border-bottom:1px dashed #eee;
   .card-type,.card-list{
     padding:$cardListPadding 0;
   }
@@ -70,7 +64,7 @@ $cardTypeColorMap:(
       bottom:0;
       content:"";
       height:4px;
-      background-origin:content-box;
+      background-color:map_get($cardTypeColorMap, frontend);
       width:100%;
       transition: width .2s;
     }
@@ -90,12 +84,13 @@ $cardTypeColorMap:(
 
   &:hover{
     .card-type:after{
-      animation:width-stretching 1s alternate ease-in-out
+      animation:width-stretching 1s ease-in-out
     }
   }
 
   .card-list{
     font-size:0;
+    padding-bottom:0;
 
     .card-wrap{
       display:inline-block;

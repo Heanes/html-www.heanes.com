@@ -17,7 +17,13 @@
   display:table;
   width:100%;
   height:100%;
-  background:url(../image/home/devices-workation.jpg) no-repeat scroll center center/cover;
+  .full-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:url(../image/home/devices-workation.jpg) no-repeat scroll center center/cover;
+    filter:blur(2px);
+  }
 }
 
 .text-vertical-center{
@@ -27,19 +33,8 @@
 }
 
 .show-full-bg-image .motto-show{
-  position:relative;
   padding:20px 0;
   line-height:40px;
-
-  /*.show-bg{
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background-color:rgba(0, 0, 0, 0.35);
-    filter: blur(2px);
-  }*/
 
   .show-content{
 
@@ -69,13 +64,16 @@
  * @time 2017-10-29 20:12:27 周日
  */
 .show-next-tips{
+  position:absolute;
+  width:100%;
+  text-align:center;
   .next-btn{
-    position:relative;
     color:#fff;
   }
 }
 
 .blur-bg{
+  position:relative;
   &:before{
     position:absolute;
     width:100%;
