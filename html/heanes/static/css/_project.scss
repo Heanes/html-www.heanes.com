@@ -33,15 +33,25 @@ $cardTypeNameBorder:4px;
 $aHoverColor:#008cff;
 
 // 定义不同类型的颜色值
+// frontend 前端
 $frontendColor:#3347bf;
+// backend 后端
 $backendColor:#79bf78;
+// design 设计
+$designColor:#a73cff;
+// operation 运营
 $operationColor:#bf3a85;
+// client 客户端
 $clientColor:#1bbf9e;
+// translate 翻译
 $translateColor:#bfb432;
+// todo_ 待办
 $todoColor:#bf0100;
 $cardTypeColorMap:(
+        default:    $frontendColor,
         frontend:   $frontendColor,
         backend:    $backendColor,
+        design:     $designColor,
         operation:  $operationColor,
         client:     $clientColor,
         translate:  $translateColor,
@@ -64,21 +74,19 @@ $cardTypeColorMap:(
       bottom:0;
       content:"";
       height:4px;
-      background-color:map_get($cardTypeColorMap, frontend);
+      background-color:map_get($cardTypeColorMap, default);
       width:100%;
       transition: width .2s;
     }
-
     .type-name{
       line-height:40px;
       margin:0;
     }
-
-    // 加载不同类型的颜色值
-    @each $cardTypeName, $cardTypeColor in $cardTypeColorMap{
-      &.#{$cardTypeName}:after{
-        background-color:$cardTypeColor;
-      }
+  }
+  // 加载不同类型的颜色值
+  @each $cardTypeName, $cardTypeColor in $cardTypeColorMap{
+    &.#{$cardTypeName} .card-type:after{
+      background-color:$cardTypeColor;
     }
   }
 
