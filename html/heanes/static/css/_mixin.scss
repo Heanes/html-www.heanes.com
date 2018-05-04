@@ -10,7 +10,7 @@
  * @time 2018-04-05 23:11:07 周四
  */
 @mixin textOverFlowEllipsis{
-  text-overflow:ellipsis;
-  white-space:nowrap;
-  overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
 }
