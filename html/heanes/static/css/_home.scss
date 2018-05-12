@@ -8,6 +8,21 @@
     width:100%;
     height:100%;
 }
+.home-page{
+    background-color:#eee;
+    .main{
+        .main-wrap{
+            background-color:#fff;
+            .main-content-top{
+                margin-top:20px;
+            }
+        }
+    }
+    .footer{
+        margin-top:20px;
+        background-color:#fff;
+    }
+}
 
 /**
  * @doc 顶部全屏展示区域

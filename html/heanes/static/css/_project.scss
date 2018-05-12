@@ -58,6 +58,14 @@ $cardTypeColorMap:(
         todo: $todoColor,
 );
 
+.project-title{
+    text-align:center;
+    margin:0 auto;
+    padding:14px 0;
+    font-size:28px;
+    border-bottom:1px solid #ddd;
+}
+
 .card-type-list-wrap{
     padding:0 $cardListPadding;
 }

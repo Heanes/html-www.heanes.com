@@ -6,14 +6,17 @@
  */
 $leftWrapWidth:260px;
 $rightWrapWidth:260px;
-$mainWrapMaxWidth:1400px;
+$mainWrapMaxWidth:(
+    wide: 1400px,
+    normal: 1200px,
+);
 
 /* Widely screen */
-/* 显示左右钉住工具栏 */
 @media screen and (min-width:1367px){
     .main-wrap{
-        width:94%;
-        max-width:$mainWrapMaxWidth;
+        width:map_get($mainWrapMaxWidth, wide);
+        max-width:map_get($mainWrapMaxWidth, wide);
+        /* 显示左右钉住工具栏 */
         .left-wrap{
             width:$leftWrapWidth;
             position:relative;
@@ -32,13 +35,16 @@ $mainWrapMaxWidth:1400px;
             padding-right:$rightWrapWidth;
         }
     }
+
+    .sidebar-fixed-handle{
+        margin-left:map_get($mainWrapMaxWidth, wide)/2;
+    }
 }
 
 /* Normal noteBook */
-/* 此宽度下不显示左右钉住工具栏，不显示左侧栏 */
 @media screen and (max-width:1366px){
     .main-wrap{
-        width:1200px;
+        width:map_get($mainWrapMaxWidth, normal);
         .center-wrap{
             width:100%;
             position:relative;
@@ -48,6 +54,7 @@ $mainWrapMaxWidth:1400px;
             position:relative;
             margin-right:$rightWrapWidth;
         }*/
+        /* 此宽度下不显示左右钉住工具栏，不显示左侧栏 */
         .right-wrap{
             width:$rightWrapWidth;
             position:relative;
@@ -56,6 +63,9 @@ $mainWrapMaxWidth:1400px;
         .left-wrap{
             display:none;
         }
+    }
+    .sidebar-fixed-handle{
+        margin-left:map_get($mainWrapMaxWidth, normal)/2;
     }
     .left-wrap, .left-bar, .right-bar{
         display:none;
@@ -69,6 +79,9 @@ $mainWrapMaxWidth:1400px;
         .center-wrap{
             width:100%;
         }
+    }
+    .sidebar-fixed-handle{
+        display:none;
     }
 }
 
