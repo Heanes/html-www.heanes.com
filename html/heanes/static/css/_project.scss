@@ -4,7 +4,7 @@
  * @author Heanes
  * @time 2018-04-02 21:56:24 周一
  */
-$cardListPadding:8px;
+$cardListPadding:20px 8px;
 $cardWrapWidth:280px;
 $carWrapBoxShadow:0 0 2px 2px rgba(212, 218, 231, 0.6);
 $carWrapBoxHoverShadow:0 0 16px 2px rgba(167, 201, 255, 0.6);
@@ -48,14 +48,14 @@ $translateColor:#bfb432;
 // todo_ 待办
 $todoColor:#bf0100;
 $cardTypeColorMap:(
-        default: $frontendColor,
-        frontend: $frontendColor,
-        backend: $backendColor,
-        design: $designColor,
-        operation: $operationColor,
-        client: $clientColor,
-        translate: $translateColor,
-        todo: $todoColor,
+        default:    $frontendColor,
+        frontend:   $frontendColor,
+        backend:    $backendColor,
+        design:     $designColor,
+        operation:  $operationColor,
+        client:     $clientColor,
+        translate:  $translateColor,
+        todo:       $todoColor,
 );
 
 .project-title{
@@ -67,7 +67,7 @@ $cardTypeColorMap:(
 }
 
 .card-type-list-wrap{
-    padding:0 $cardListPadding;
+    padding:$cardListPadding;
 }
 
 .card-type-item{

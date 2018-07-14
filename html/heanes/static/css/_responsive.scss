@@ -65,7 +65,7 @@ $mainWrapMaxWidth:(
         }
     }
     .sidebar-fixed-handle{
-        margin-left:map_get($mainWrapMaxWidth, normal)/2;
+        margin-left:map_get($mainWrapMaxWidth, normal)/2 + 2px;
     }
     .left-wrap, .left-bar, .right-bar{
         display:none;
