@@ -3,6 +3,7 @@ var projectList = [
         categoryId: 1,              // 分类id
         categoryName: '前端',       // 分类名称
         categoryCode: 'frontend',   // 分类code
+        bgColor: '',                // 分栏颜色
         projectList: [
             {
                 id: 1,              // id
